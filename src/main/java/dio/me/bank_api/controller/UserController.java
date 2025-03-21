@@ -29,7 +29,7 @@ public class UserController {
         var newUser = userService.create(user);
         URI location = ServletUriComponentsBuilder.fromCurrentRequest()
                 .path("/{id}")
-                .buildAndExpand(user.getId())
+                .buildAndExpand(newUser.getId())
                 .toUri();
         return ResponseEntity.created(location).body(newUser);
     }
