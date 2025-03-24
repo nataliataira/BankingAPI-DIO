@@ -78,7 +78,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>dio.me.BankApiApplication</mainClass>
+							<mainClass>dio.me.bank_api.BankApiApplication</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
