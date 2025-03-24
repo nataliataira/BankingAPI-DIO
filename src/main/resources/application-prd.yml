@@ -1,11 +1,13 @@
 spring:
   datasource:
-    url: ${DATABASE_URL}
+    url: jdbc:postgresql://nozomi.proxy.rlwy.net:12631/railway
+    username: postgres
+    password: TjQIBMGhyRHwHchtoPolLbFXbiefqxpR
     driver-class-name: org.postgresql.Driver
 
   jpa:
     open-in-view: false
     hibernate:
-      ddl-auto: update
+      ddl-auto: validate
     properties:
       hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
